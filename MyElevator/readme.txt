@@ -1,12 +1,1 @@
 https://github.com/kakao-recruit/2019-blind-2nd-elevator
-
-
-go가 깔려 있어야 함 (*설정해놓은 GOPATH는 Users/go)
-
-$ git clone https://github.com/kakao-recruit/2019-blind-2nd-elevator.git $GOPATH/src/2019-blind-2nd-elevator
-$ cd $GOPATH/src/2019-blind-2nd-elevator/elevator/cmd/elevator/
-$ go get ./						
-$ go build
-$ ./elevator
-
-실행 확인은 http://localhost:8000/viewer 에서
