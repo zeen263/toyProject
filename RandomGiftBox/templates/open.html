@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+  <title>Nam's Giftbox Online</title>
+    <style>
+       html, body { color: white; background-color: black;
+                    width:100%, height: 100%; }
+    </style>
+
+ 
+ </head>
+
+ <body>
+
+<center>
+
+<iframe src="/static/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="audio" autoplay>
+<source src="/static/drumroll.mp3">
+</audio>
+
+<img src="/static/img/NGO.png" width="600"><br><br><br><br><br>
+
+   <img src="/static/img/box3.gif" width="400">
+
+
+  <form name="sendForm" action="/gift/congrats" method="post"> 
+        <input type="hidden" name="id" value={{ID}}>
+	<input type="hidden" name="pw" value={{PW}}>
+  </form>
+
+  <script type="text/javascript">
+    setTimeout(function() {
+    document.sendForm.submit();
+    },4500);
+  </script>
+
+
+
+
+
+
+
+</center>
+
+ </body>
+
+</html>

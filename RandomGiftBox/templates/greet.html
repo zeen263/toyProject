@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+  <title>Nam's Giftbox Online</title>
+    <style>
+       html, body { color: white; background-color: black;
+                    width:100%, height: 100%; }
+					
+
+    </style>
+ 
+ </head>
+
+ <body>
+<center>
+
+<img src="/static/img/NGO.png" width="600"><br><br>
+  <img src="/static/img/welcome.png" height="60">
+  <font size="7" color="white">{{ID}}</font>
+  <img src="/static/img/mark.png" height="60" >
+<br><br><br>
+
+
+    <form action="/gift/open" method="post">
+        <input type="image" src="/static/img/box.gif">
+        <input type="hidden" name="id" value={{ID}}>
+	<input type="hidden" name="pw" value={{PW}}>
+    </form>
+<br><img src="/static/img/clickbox.png"  height="40">
+</center>
+
+ </body>
+
+</html>

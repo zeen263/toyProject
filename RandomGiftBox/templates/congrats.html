@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="UTF-8">
+  <title>Nam's Giftbox Online</title>
+    <style>
+       html, body { color: white; background-color: black;
+                    width:100%, height: 100%; }
+    </style>
+ 
+ </head>
+
+ <body>
+
+
+<center>
+<img src="/static/img/NGO.png" width="600"><br><br><br>
+<img src="/static/img/congrats.png" width="500"><br><br>
+ &Gt;&Gt; {{GIFT}} &Lt;&Lt; <br><br>
+{% if GIFT == "gift1" %}
+   <img src="/static/img/gift1.PNG" width="300">
+{% elif GIFT == "gift2" %}
+   <img src="/static/img/gift2.PNG" width="300">
+{% elif GIFT == "gift3" %}
+   <img src="/static/img/gift3.PNG" width="300">
+{% endif %}
+
+<br><br>
+<iframe src="/static/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="audio" autoplay>
+<source src="/static/tada.wav">
+</audio>
+
+<br>
+  <form action="/gift/greet" method="post">
+	<input type="hidden" name="id" value={{ID}}>
+	<input type="hidden" name="pw" value={{PW}}>
+        <input type="image" src="/static/img/btnBack.png" height="35">    
+		
+ </form>
+ </center>
+
+ </body>
+
+</html>
